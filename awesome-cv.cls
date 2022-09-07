@@ -391,12 +391,12 @@
 \newcommand{\acvHeaderAfterAddressSkip}{-.5mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\acvHeaderAfterSocialSkip}{6mm}
-\newcommand{\acvHeaderAfterQuoteSkip}{5mm}
+\newcommand{\acvHeaderAfterSocialSkip}{2mm}
+\newcommand{\acvHeaderAfterQuoteSkip}{4mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{0.7mm}
+\newcommand{\acvSectionContentTopSkip}{1.8mm}
 
 
 %-------------------------------------------------------------------------------
@@ -648,6 +648,12 @@
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+}
+
+% Define a line of cv information(Certificate and Licenses)
+% Usage: \cvhonor{<title>}{<issuer>}{<date>}
+\newcommand*{\cvcert}[3]{%
+  \honordatestyle{#3} & \honorpositionstyle{#1} & \honorlocationstyle{#2} \\
 }
 
 % Define an environment for cvskill
