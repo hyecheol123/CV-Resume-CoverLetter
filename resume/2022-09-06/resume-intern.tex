@@ -19,17 +19,9 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, letterpaper]{../../awesome-cv}
-% \usepackage{eso-pic}
-% \newcommand{\placetextbox}[3]{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-%   \setbox0=\hbox{#3}% Put <stuff> in a box
-%   \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-%     \put(\LenToUnit{#1\paperwidth},\LenToUnit{#2\paperheight}){\vtop{{\null}\makebox[0pt][c]{#3}}}%
-%   }%
-% }%
-% \definecolor{HTMLBlue}{rgb}{0,0,1}
 
 % Configure page margins with geometry
-\geometry{left=.8cm, top=.8cm, right=.8cm, bottom=.8cm, footskip=.2cm}
+\geometry{left=.8cm, top=.6cm, right=.8cm, bottom=.6cm, footskip=.2cm}
 
 % Specify the location of the included fonts
 \fontdir[../../fonts/]
@@ -107,25 +99,15 @@
 \smallskip
 \input{elements/education.tex}
 \smallskip
-\input{elements/projects.tex}
-\smallskip
 \input{elements/experience.tex}
+\smallskip
+\input{elements/projects.tex}
 % \smallskip
 % \input{elements/certificates.tex}
 \smallskip
 \input{elements/honors.tex}
 \smallskip
 \input{elements/skills.tex}
-
-% %-------------------------------------------------------------------------------
-% % FLOTTING TEXTBOX CONTENT
-% % FOR PROJECT GITHUB URL
-% %-------------------------------------------------------------------------------
-% \placetextbox{0.495}{0.624}{\fontsize{9pt}{1em}\bodyfont\upshape\color{HTMLBlue} \textbf{https://github.com/BusanDevelopers/BGM-Event-Calendar-API}}
-% \placetextbox{0.514}{0.609}{\fontsize{9pt}{1em}\bodyfont\upshape\color{HTMLBlue} \textbf{https://github.com/BusanDevelopers/BGM-Event-Calendar-Webpage}}
-% \placetextbox{0.56}{0.546}{\fontsize{9pt}{1em}\bodyfont\upshape\color{HTMLBlue} \textbf{https://github.com/KSEAWisconsin/kseawisconsin.github.io}}
-% \placetextbox{0.575}{0.455}{\fontsize{8pt}{1em}\bodyfont\upshape\color{HTMLBlue} \textbf{https://github.com/hyecheol123/Cloudflare-Public-Dynamic-IP-Update}}
-
 
 %-------------------------------------------------------------------------------
 \end{document}
